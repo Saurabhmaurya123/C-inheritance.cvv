@@ -1,0 +1,28 @@
+#include<iostream.h>
+#include<conio.h>
+class A{
+	public:
+	void show_A()
+	{cout<<"This is class A"<<endl;}
+};
+class B :public A
+     { public :
+     void show_B()
+     {cout<<"This is class B"<<endl;}
+};
+class C :public B
+{public :
+void show_C()
+{cout<<"This is class C"<<endl;}
+};
+     int main()
+     { 
+     B ob1;
+     C ob2;
+     ob1.show_B();
+     ob1.show_A();
+     ob2.show_C();
+     ob2.show_B();
+     ob2.show_A(); 		
+	getch();}
+	

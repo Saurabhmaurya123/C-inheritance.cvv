@@ -1,0 +1,67 @@
+#include<iostream.h>
+#include<conio.h>
+class A{
+	public:
+	void show_A()
+	{cout<<"This is class A\n"<<endl;}
+};
+class B :public A
+     { public :
+     void show_B()
+     {cout<<"This is class B"<<endl;}
+};
+class C :public A
+{public :
+void show_C()
+{cout<<"This is class C"<<endl;}
+};
+class D :public B
+     { public :
+     void show_D()
+     {cout<<"This is class D"<<endl;}
+};
+class E :public B
+{public :
+void show_E()
+{cout<<"This is class E"<<endl;}
+};
+class F:public C
+     { public :
+     void show_F()
+     {cout<<"This is class F"<<endl;}
+};
+class G :public C
+{public :
+void show_G()
+{cout<<"This is class G"<<endl;}
+};
+
+
+     int main()
+     { 
+     A oba;
+     oba.show_A();
+     B obb;
+     obb.show_B();
+     obb.show_A();
+     C obc;
+     obc.show_C();
+     obc.show_A();
+     D obd;
+     obd.show_D();
+     obd.show_B();
+     obd.show_A();
+     E obe;
+     obe.show_E();
+     obe.show_B();
+     obe.show_A();
+     F obf;
+     obf.show_F();
+     obf.show_C();
+     obf.show_A();
+     G obg;
+     obg.show_G();
+     obg.show_C();
+     obg.show_A();
+	getch();}
+	
